@@ -1,0 +1,260 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set body font and background color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+
+  /* CSS styles for header logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 3px; /* add margin as needed */
+  }
+  
+  /* CSS styles for header navigation */
+.header-nav {
+    margin-left: auto;
+  }
+  
+  .header-nav-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header-nav-list li {
+    margin-left: 15px;
+  }
+  
+  .header-nav-list li:first-child {
+    margin-left: 0;
+  }
+  
+  .header-nav-list li a {
+    color: #000; /* update with desired color */
+    font-size: 16px; /* update with desired font size */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .header-nav-list li a:hover {
+    color: #25692a; /* update with desired hover color */
+  }
+  
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    padding: 40px;
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  /* Product section styles */
+  #product-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  /* CSS styles for product pictures */
+.product-img {
+    width: 400px; /* update with desired width */
+    height: 300px; /* update with desired height */
+    border-radius: 5px; /* update with desired rounded corner size */
+    overflow: hidden; /* hide overflowing content if any */
+  }
+  
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* maintain aspect ratio and cover entire container */
+  }  
+  
+  #product-image-container {
+    flex: 1;
+    text-align: center;
+  }
+  
+  #product-details-container {
+    flex: 0.7;
+    line-height: 1.2;
+    text-align: left;
+  }
+  
+  #product-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #4caf50;
+}
+
+#buy-now-btn {
+display: block;
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 18px;
+font-weight: bold;
+background-color: #4caf50;
+color: #ffffff;
+border: none;
+cursor: pointer;
+border-radius: 8px;
+}
+
+/* Features section styles */
+#features-section {
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  
+  #features-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4caf50;
+  }
+  
+  #features-section ul {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Use auto-fit and minmax to create a responsive grid with minimum width of 250px */
+    gap: 20px; /* Add gap between grid items */
+    justify-items: center; /* Center align grid items */
+  }
+  
+  #features-section li {
+    display: flex; /* Use flexbox for the individual grid items */
+    align-items: center; /* Center align flex items vertically */
+    flex-direction: column; /* Update flex-direction to column for vertical stacking of title and description */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center; /* Center align text content */
+  }
+  
+  .feature-icon {
+    font-size: 36px;
+    color: #4caf50;
+  }
+  
+  .feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+    color: #666666;
+  }  
+
+/* Testimonials section styles */
+#testimonials-section {
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  #testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4caf50;
+  }
+  
+  #testimonials-section .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Apply border-radius to create rounded photo */
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial p {
+    font-size: 14px;
+    color: #666666;
+  }  
+
+/* Subscribe section styles */
+#subscribe-section {
+    padding: 60px 0;
+    background-color: #4caf50;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  #subscribe-section h2 {
+    margin-bottom: 40px;
+  }
+  
+  #subscribe-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #subscribe-email {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #subscribe-email::placeholder {
+    color: #ffffff;
+  }
+  
+  #subscribe-email:focus {
+    outline: none;
+  }
+  
+#subscribe-submit {
+    display: block;
+    width: 100%;
+    background-color: #388e3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+  }
+  
+  #subscribe-submit:hover {
+    background-color: #25692a;
+  }  
+  
+/* Footer styles */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #25692a;
+color: #ffffff;
+}  
